@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Button Component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kiwi+Maru&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/components.css" />
+  </head>
+  <body>
+    <h1>Button Component</h1>
+    <!-- Button Component -->
+    <!-- 使用方法: 
+         1. href属性を適切なリンク先に変更
+         2. ボタンテキストを変更
+         3. 必要に応じてクラスを追加（例：header__button）
+    -->
+    
+    <!-- 基本的なボタン -->
+    <a href="#contact" class="button">応募してみる</a>
+    
+    <!-- ヘッダー用ボタン（追加クラス付き） -->
+    <a href="#contact" class="header__button button">応募してみる</a>
+    
+    <!-- contact IDを追加（リントエラー修正用） -->
+    <div id="contact" style="margin-top: 20px; padding: 20px; background-color: #f0f0f0;">
+      <p>ここがcontactセクションです。実際のサイトでは適切なコンテンツに置き換えてください。</p>
+    </div>
+
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>

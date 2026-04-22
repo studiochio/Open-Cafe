@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 制作中のみ使用：本番では削除 -->
+    <meta name="robots" content="noindex" />
+    <title>店舗情報 | Open Cafe - dish & coffee -</title>
+    <meta
+      name="description"
+      content="Open Cafeの、お知らせについてご案内します。"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Damion&family=Noto+Serif+JP:wght@200..900&family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="news-fv fixed-page">
+    <main class="main">
+      <section class="page-header" id="concept">
+        <picture>
+          <source srcset="img/firstview_shop.jpg" media="(min-width: 768px)" />
+          <img src="img/firstview_shop_sp.jpg" alt="Open Cafeのコンセプト" />
+        </picture>
+
+        <div class="page-header__title">
+          <h1 class="page-header__title-en">SHOP</h1>
+          <h2 class="page-header__title-jp">店舗情報</h2>
+        </div>
+
+        <!-- ドロワーボタンをFV内に置く -->
+        <button id="js-drawer-icon" class="header__open drawer-icon">
+          <span class="drawer-icon__bar"></span>
+          <span class="drawer-icon__bar"></span>
+          <span class="drawer-icon__bar"></span>
+        </button>
+        <div id="js-drawer-content" class="drawer-content concept-drawer">
+          <div class="drawer-content__menu">
+            <a href="#concept" class="drawer-content__link">
+              TOP
+              <span class="drawer-content__link-slash">／</span>
+              <span class="drawer-content__link-jp">トップ</span>
+            </a>
+
+            <a href="#about" class="drawer-content__link">
+              CONCEPT
+              <span class="drawer-content__link-slash">／</span>
+              <span class="drawer-content__link-jp">コンセプト</span>
+            </a>
+
+            <a href="#grand-menu" class="drawer-content__link">
+              MENU
+              <span class="drawer-content__link-slash">／</span>
+              <span class="drawer-content__link-jp">メニュー</span>
+            </a>
+
+            <a href="#news" class="drawer-content__link">
+              NEWS
+              <span class="drawer-content__link-slash">／</span>
+              <span class="drawer-content__link-jp">お知らせ</span>
+            </a>
+
+            <a href="#access" class="drawer-content__link">
+              SHOP
+              <span class="drawer-content__link-slash">／</span>
+              <span class="drawer-content__link-jp">店舗情報</span>
+            </a>
+
+            <a href="#special-menu" class="drawer-content__link">
+              GIFT
+              <span class="drawer-content__link-slash">／</span>
+              <span class="drawer-content__link-jp">ギフト・贈り物</span>
+            </a>
+
+            <a href="#access" class="drawer-content__link">
+              CONTACT
+              <span class="drawer-content__link-slash">／</span>
+              <span class="drawer-content__link-jp">お問い合わせ</span>
+            </a>
+
+            <div class="drawer-content__sns">
+              <a href="#" class="drawer-content__sns-link" aria-label="Twitter">
+                <img src="img/icon_twitter-light.png" alt="Twitter" />
+              </a>
+              <a
+                href="#"
+                class="drawer-content__sns-link"
+                aria-label="Instagram"
+              >
+                <img src="img/icon_instagram-light.png" alt="Instagram" />
+              </a>
+              <a href="#" class="drawer-content__sns-link" aria-label="YouTube">
+                <img src="img/icon_youtube-light.png" alt="YouTube" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--パンくずリスト -->
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb__list">
+          <li><a href="/">TOP</a></li>
+          <li><span>店舗情報</span></li>
+        </ol>
+      </nav>
+
+      <!-- 記事詳細 -->
+      <section class="shop">
+        <!-- 店舗① -->
+        <article class="shop-list">
+          <div class="shop__inner">
+            <!-- 店舗名 -->
+            <h2 class="heading-bar">OPEN CAFE　吉祥寺店</h2>
+            <!-- 店舗画像 -->
+            <div class="shop__thumbnail">
+              <img src="img/shop_kitijoji.png" alt="OPEN CAFE 吉祥寺店 外観" />
+            </div>
+            <div class="shop-info__info">
+              <dl class="shop-info__info-list">
+                <div class="shop-info__info-item">
+                  <dt>住所</dt>
+                  <dd>〒000-0000<br />東京都武蔵野市吉祥寺南町一丁目</dd>
+                </div>
+                <div class="shop-info__info-item">
+                  <dt>TEL</dt>
+                  <dd><a href="tel:0123456789">0123-456-789</a></dd>
+                </div>
+                <div class="shop-info__info-item">
+                  <dt>Mail</dt>
+                  <dd>
+                    <a href="mailto:info@opencafe.com">example@mail.com</a>
+                  </dd>
+                </div>
+                <div class="shop-info__info-item">
+                  <dt>営業時間</dt>
+                  <dd>7:00〜21:00<br />※ラストオーダー 20:30</dd>
+                </div>
+                <div class="shop-info__info-item">
+                  <dt>定休日</dt>
+                  <dd>水曜日</dd>
+                </div>
+                <div class="shop-info__info-item">
+                  <dt>座席</dt>
+                  <dd>テーブル20席 ／ カウンター席6席</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </article>
+
+        <!-- 店舗② -->
+        <article class="shop-list">
+          <div class="shop__inner">
+            <!-- 店舗名 -->
+            <h2 class="heading-bar">OPEN CAFE　阿佐ヶ谷店</h2>
+            <!-- 店舗画像 -->
+            <div class="shop__thumbnail">
+              <img src="img/shop_asagaya.png" alt="OPEN CAFE 阿佐ヶ谷店 外観" />
+            </div>
+            <div class="shop-info__info">
+              <dl class="shop-info__info-list">
+                <div class="shop-info__info-item">
+                  <dt>住所</dt>
+                  <dd>〒000-0000<br />東京都杉並区阿佐谷0-0-0</dd>
+                </div>
+                <div class="shop-info__info-item">
+                  <dt>TEL</dt>
+                  <dd><a href="tel:0123456789">03-1234-5678</a></dd>
+                </div>
+                <div class="shop-info__info-item">
+                  <dt>Mail</dt>
+                  <dd>
+                    <a href="mailto:info@opencafe.com"
+                      >asagaya.example@mail.com</a
+                    >
+                  </dd>
+                </div>
+                <div class="shop-info__info-item">
+                  <dt>営業時間</dt>
+                  <dd>7:00〜19:00<br />※ラストオーダー 18:30</dd>
+                </div>
+                <div class="shop-info__info-item">
+                  <dt>定休日</dt>
+                  <dd>年中無休</dd>
+                </div>
+                <div class="shop-info__info-item">
+                  <dt>座席</dt>
+                  <dd>30席</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </article>
+
+        <!-- 店舗③ -->
+        <article class="shop-list">
+          <div class="shop__inner">
+            <!-- 店舗名 -->
+            <h2 class="heading-bar">OPEN CAFE　中野店</h2>
+            <!-- 店舗画像 -->
+            <div class="shop__thumbnail">
+              <img src="img/shop_nakano.png" alt="OPEN CAFE 中野店 外観" />
+            </div>
+            <div class="shop-info__info">
+              <dl class="shop-info__info-list">
+                <div class="shop-info__info-item">
+                  <dt>住所</dt>
+                  <dd>〒000-0000<br />東京都中野区中野0-0-0</dd>
+                </div>
+                <div class="shop-info__info-item">
+                  <dt>TEL</dt>
+                  <dd><a href="tel:0123456789">03-8765-4321</a></dd>
+                </div>
+                <div class="shop-info__info-item">
+                  <dt>Mail</dt>
+                  <dd>
+                    <a href="mailto:info@opencafe.com"
+                      >nakano.example@mail.com</a
+                    >
+                  </dd>
+                </div>
+                <div class="shop-info__info-item">
+                  <dt>営業時間</dt>
+                  <dd>6:00〜22:00<br />※ラストオーダー21:30</dd>
+                </div>
+                <div class="shop-info__info-item">
+                  <dt>定休日</dt>
+                  <dd>火曜日</dd>
+                </div>
+                <div class="shop-info__info-item">
+                  <dt>座席</dt>
+                  <dd>テーブル4席 ／ カウンター10席</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footerセクション -->
+    <footer id="access" class="footer">
+      <div class="footer__inner inner">
+        <!-- 背景画像（3枚・picture切り替え） -->
+        <div class="footer__bg">
+          <!-- 背景画像① -->
+          <picture class="footer__bg-item footer__bg-item--bread">
+            <source srcset="img/footer_bread.png" media="(min-width: 768px)" />
+            <img src="img/footer_breadSP.png" alt="" />
+          </picture>
+
+          <!-- 背景画像② -->
+          <picture class="footer__bg-item footer__bg-item--balloon">
+            <source
+              srcset="img/footer_balloon.png"
+              media="(min-width: 768px)"
+            />
+            <img src="img/footer_balloonSP.png" alt="" />
+          </picture>
+
+          <!-- 背景画像③ -->
+          <picture class="footer__bg-item footer__bg-item--coffee">
+            <source
+              srcset="img/footer_coffee-beans.png"
+              media="(min-width: 768px)"
+            />
+            <img src="img/footer_coffee-beansSP.png" alt="" />
+          </picture>
+        </div>
+
+        <!-- タイトル -->
+        <div class="title footer__title">
+          <div class="title__container">
+            <div class="title__content">
+              <h2 class="title__text-en footer__title-text-en">ACCESS</h2>
+              <div class="title__text-ja footer__title-text-ja">アクセス</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Googleマップ -->
+        <div class="footer__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9795.040520042063!2d139.5710705285303!3d35.7042431775406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee494564f00b%3A0x10f918221a23dade!2sKichij%C5%8Dji%20Petit%20Mura!5e0!3m2!1sen!2sjp!4v1769842273303!5m2!1sen!2sjp"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- 店舗情報 -->
+        <div class="shop-info__info">
+          <dl class="shop-info__info-list">
+            <div class="shop-info__info-item">
+              <dt>住所</dt>
+              <dd>〒000-0000<br />東京都武蔵野市吉祥寺南町一丁目</dd>
+            </div>
+            <div class="shop-info__info-item">
+              <dt>TEL</dt>
+              <dd><a href="tel:0123456789">0123-456-789</a></dd>
+            </div>
+            <div class="shop-info__info-item">
+              <dt>Mail</dt>
+              <dd>
+                <a href="mailto:info@opencafe.com">example@mail.com</a>
+              </dd>
+            </div>
+            <div class="shop-info__info-item">
+              <dt>営業時間</dt>
+              <dd>7:00〜21:00<br />※ラストオーダー 20:30</dd>
+            </div>
+            <div class="shop-info__info-item">
+              <dt>定休日</dt>
+              <dd>水曜日</dd>
+            </div>
+            <div class="shop-info__info-item">
+              <dt>座席</dt>
+              <dd>テーブル20席 ／ カウンター席6席</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+      <!-- フッター下枠 -->
+      <div class="footer__bottom">
+        <div class="footer__bottom-inner inner">
+          <!-- SNSリンク（drawerの画像使い回し） -->
+          <div class="footer__sns drawer-content__sns">
+            <a href="#" class="drawer-content__sns-link" aria-label="Twitter">
+              <img src="img/icon_twitter-light.png" alt="Twitter" />
+            </a>
+            <a href="#" class="drawer-content__sns-link" aria-label="Instagram">
+              <img src="img/icon_instagram-light.png" alt="Instagram" />
+            </a>
+            <a href="#" class="drawer-content__sns-link" aria-label="YouTube">
+              <img src="img/icon_youtube-light.png" alt="YouTube" />
+            </a>
+          </div>
+
+          <!-- コピーライト -->
+          <small class="footer__copyright">
+            ©︎2000-2021 open cafe. All Rights Reserved.
+          </small>
+        </div>
+        <button id="js-pagetop" class="pagetop">
+          <span class="pagetop__arrow">
+            <img src="./img/pagetop.png" alt="ページトップへ戻る" />
+          </span>
+        </button>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="./js/hamburger.js" defer></script>
+    <script src="./js/error.js" defer></script>
+    <script src="./js/smooth-scroll.js" defer></script>
+    <script src="./js/pagetop.js" defer></script>
+    <script src="./js/fv.js" defer></script>
+  </body>
+</html>

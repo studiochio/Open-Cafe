@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Title Component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kiwi+Maru&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/components.css" />
+  </head>
+  <body>
+    <h1>Title Component</h1>
+    <!-- Title Component -->
+    <!-- 使用方法: 
+         1. title__icon-img の src を変更してアイコンを変更
+         2. title__text の内容を変更してタイトルテキストを変更
+         3. alt属性もテキストに合わせて変更
+    -->
+    <div class="title">
+      <div class="title__container">
+        <div class="title__content">
+          <div class="title__icon">
+            <img src="../img/about_icon.png" alt="" class="title__icon-img" width="48" height="48">
+          </div>
+          <h2 class="title__text-en">About</h2>
+          <div class="title__text-ja">キャンペーンについて</div>
+          <div class="title__underline"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>

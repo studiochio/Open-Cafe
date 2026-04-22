@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 制作中のみ使用：本番では削除 -->
+    <meta name="robots" content="noindex" />
+    <title>Concept Open Cafe - dish & coffee -</title>
+    <meta
+      name="description"
+      content="Open Cafeは、手作り料理と厳選されたコーヒーを楽しめるカフェで、訪れる人々にリラックスした時間を提供しています。心地よい空間でのんびりとしたひとときを過ごせるよう、内装にもこだわり、美しいガーデニングが特徴です。"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Damion&family=Noto+Serif+JP:wght@200..900&family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="concept-fv fixed-page">
+    <main class="main">
+      <section class="page-header" id="concept">
+        <picture>
+          <source srcset="img/firstview_concept.png" media="(min-width: 768px)" />
+          <img src="img/firstview_concept_sp.jpg" alt="Open Cafeのコンセプト" />
+        </picture>
+
+        <div class="page-header__title">
+          <h1 class="page-header__title-en">CONCEPT</h1>
+          <h2 class="page-header__title-jp">コンセプト</h2>
+        </div>
+
+        <!-- ドロワーボタンをFV内に置く -->
+         <button id="js-drawer-icon" class="header__open drawer-icon">
+          <span class="drawer-icon__bar"></span>
+          <span class="drawer-icon__bar"></span>
+          <span class="drawer-icon__bar"></span>
+        </button>
+        <div id="js-drawer-content" class="drawer-content concept-drawer">
+          <div class="drawer-content__menu">
+            <a href="#concept" class="drawer-content__link">
+              TOP
+              <span class="drawer-content__link-slash">／</span>
+              <span class="drawer-content__link-jp">トップ</span>
+            </a>
+
+            <a href="#about" class="drawer-content__link">
+              CONCEPT
+              <span class="drawer-content__link-slash">／</span>
+              <span class="drawer-content__link-jp">コンセプト</span>
+            </a>
+
+            <a href="#grand-menu" class="drawer-content__link">
+              MENU
+              <span class="drawer-content__link-slash">／</span>
+              <span class="drawer-content__link-jp">メニュー</span>
+            </a>
+
+            <a href="#news" class="drawer-content__link">
+              NEWS
+              <span class="drawer-content__link-slash">／</span>
+              <span class="drawer-content__link-jp">お知らせ</span>
+            </a>
+
+            <a href="#access" class="drawer-content__link">
+              SHOP
+              <span class="drawer-content__link-slash">／</span>
+              <span class="drawer-content__link-jp">店舗情報</span>
+            </a>
+
+            <a href="#special-menu" class="drawer-content__link">
+              GIFT
+              <span class="drawer-content__link-slash">／</span>
+              <span class="drawer-content__link-jp">ギフト・贈り物</span>
+            </a>
+
+            <a href="#access" class="drawer-content__link">
+              CONTACT
+              <span class="drawer-content__link-slash">／</span>
+              <span class="drawer-content__link-jp">お問い合わせ</span>
+            </a>
+
+            <div class="drawer-content__sns">
+              <a href="#" class="drawer-content__sns-link" aria-label="Twitter">
+                <img src="img/icon_twitter-light.png" alt="Twitter" />
+              </a>
+              <a
+                href="#"
+                class="drawer-content__sns-link"
+                aria-label="Instagram"
+              >
+                <img src="img/icon_instagram-light.png" alt="Instagram" />
+              </a>
+              <a href="#" class="drawer-content__sns-link" aria-label="YouTube">
+                <img src="img/icon_youtube-light.png" alt="YouTube" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--パンくずリスト -->
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb__list">
+          <li><a href="/">TOP</a></li>
+          <li><span>コンセプト</span></li>
+        </ol>
+      </nav>
+
+
+      <section class="concept-block">
+          <article class="concept-item concept-item--coffee">
+            <div class="concept-block__text">
+              <h2 class="concept-block__title">美味しいコーヒーと食事で、<br />最高のひとときを。</h2>
+              <p class="concept-block__desc">
+                当店では、こだわりのコーヒーだけでなく、お食事メニューにも力を入れています。自家焙煎の香り高いコーヒーと、その相性を考え抜いた多彩な料理は、五感を満たす絶妙なハーモニー。<br />素材選びや調理法にも一切の妥協をせず、常に新鮮な食材を活かした一皿をご提供。季節によって変化するメニューには、その時期ならではの味わいも含まれており、飽きることなく楽しんでいただけるはずです。<br />大切な人と交わす会話や、ふと立ち止まりたくなるような一人の時間を、香り高いコーヒーと彩り豊かな料理がいっそう特別なひとときに変えてくれます。
+              </p>
+          </div>
+
+          <div class="concept-block__images">
+            <img src="img/concept1-1.png" alt="店内画像" />
+            <img src="img/concept1-2.png" alt="ハンドドリップで淹れるコーヒー" />
+            <img src="img/concept1-3.png" alt="コーヒー" />
+          </div>
+        </article>
+        
+        <article class="concept-item concept-item--pasta concept-item--reverse">
+          <div class="concept-block__text">
+            <h2 class="concept-block__title concept-block__title--pasta">本場イタリアで培った<br />自慢のパスタ</h2>
+            <p class="concept-block__desc">
+             オーナーが本場イタリアで修業を積んだ経験を余すことなく活かし、素材の持ち味を最大限に引き出したパスタをご用意しています。オリーブオイルやハーブなど、厳選された食材はイタリアの風をそのまま運んでくれるかのよう。<br />小麦本来の香りと弾力を楽しめる麺と、深みある<br class="hidden-pc"/>ソースが織り成す味わいは、一度口にすれば忘れられないほどの存在感を放ちます。
+            </p>
+          </div>
+
+          <div class="concept-block__images-2">
+            <img src="img/concept2-1.png" alt="パスタ" />
+            <img src="img/concept2-2.png" alt="パスタ作り" />
+          </div>
+        </article>
+
+        <article class="concept-item concept-item--croissant">
+          <div class="concept-block__text">
+            <h2 class="concept-block__title concept-block__title--croissant">ほどよい甘さの<br />自家製こだわりクロワッサン</h2>
+            <p class="concept-block__desc">
+              香ばしく焼き上げたクロワッサンは、軽やかな食感とほんのりとした甘さが魅力。バターの豊かな風味とサクサクの生地が織り成す贅沢な味わいは、朝食や<br class="hidden-pc"/>ティータイムにぴったりです。
+            </p>
+          </div>
+
+          <div class="concept-block__images">
+            <img src="img/concept3.png" alt="クロワッサン" />
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footerセクション -->
+    <footer id="access" class="footer">
+      <div class="footer__inner inner">
+        <!-- 背景画像（3枚・picture切り替え） -->
+        <div class="footer__bg">
+          <!-- 背景画像① -->
+          <picture class="footer__bg-item footer__bg-item--bread">
+            <source srcset="img/footer_bread.png" media="(min-width: 768px)" />
+            <img src="img/footer_breadSP.png" alt="" />
+          </picture>
+
+          <!-- 背景画像② -->
+          <picture class="footer__bg-item footer__bg-item--balloon">
+            <source
+              srcset="img/footer_balloon.png"
+              media="(min-width: 768px)"
+            />
+            <img src="img/footer_balloonSP.png" alt="" />
+          </picture>
+
+          <!-- 背景画像③ -->
+          <picture class="footer__bg-item footer__bg-item--coffee">
+            <source
+              srcset="img/footer_coffee-beans.png"
+              media="(min-width: 768px)"
+            />
+            <img src="img/footer_coffee-beansSP.png" alt="" />
+          </picture>
+        </div>
+
+        <!-- タイトル -->
+        <div class="title footer__title">
+          <div class="title__container">
+            <div class="title__content">
+              <h2 class="title__text-en footer__title-text-en">ACCESS</h2>
+              <div class="title__text-ja footer__title-text-ja">アクセス</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Googleマップ -->
+        <div class="footer__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9795.040520042063!2d139.5710705285303!3d35.7042431775406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee494564f00b%3A0x10f918221a23dade!2sKichij%C5%8Dji%20Petit%20Mura!5e0!3m2!1sen!2sjp!4v1769842273303!5m2!1sen!2sjp"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- 店舗情報 -->
+        <div class="footer__info">
+          <dl class="footer__info-list">
+            <div class="footer__info-item">
+              <dt>住所</dt>
+              <dd>〒000-0000<br />東京都武蔵野市吉祥寺南町一丁目</dd>
+            </div>
+
+            <div class="footer__info-item">
+              <dt>TEL</dt>
+              <dd><a href="tel:0123456789">0123-456-789</a></dd>
+            </div>
+
+            <div class="footer__info-item">
+              <dt>Mail</dt>
+              <dd><a href="mailto:info@opencafe.com">example@mail.com</a></dd>
+            </div>
+
+            <div class="footer__info-item">
+              <dt>営業時間</dt>
+              <dd>7:00〜21:00<br />※ラストオーダー 20:30</dd>
+            </div>
+
+            <div class="footer__info-item">
+              <dt>定休日</dt>
+              <dd>水曜日</dd>
+            </div>
+
+            <div class="footer__info-item">
+              <dt>座席</dt>
+              <dd>テーブル20席／カウンター6席</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+      <!-- フッター下枠 -->
+      <div class="footer__bottom">
+        <div class="footer__bottom-inner inner">
+          <!-- SNSリンク（drawerの画像使い回し） -->
+          <div class="footer__sns drawer-content__sns">
+            <a href="#" class="drawer-content__sns-link" aria-label="Twitter">
+              <img src="img/icon_twitter-light.png" alt="Twitter" />
+            </a>
+            <a href="#" class="drawer-content__sns-link" aria-label="Instagram">
+              <img src="img/icon_instagram-light.png" alt="Instagram" />
+            </a>
+            <a href="#" class="drawer-content__sns-link" aria-label="YouTube">
+              <img src="img/icon_youtube-light.png" alt="YouTube" />
+            </a>
+          </div>
+
+          <!-- コピーライト -->
+          <small class="footer__copyright">
+            ©︎2000-2021 open cafe. All Rights Reserved.
+          </small>
+        </div>
+        <button id="js-pagetop" class="pagetop">
+          <span class="pagetop__arrow">
+            <img src="./img/pagetop.png" alt="ページトップへ戻る" />
+          </span>
+        </button>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="./js/hamburger.js" defer></script>
+    <script src="./js/error.js" defer></script>
+    <script src="./js/smooth-scroll.js" defer></script>
+    <script src="./js/pagetop.js" defer></script>
+    <script src="./js/fv.js" defer></script>
+  </body>
+</html>
